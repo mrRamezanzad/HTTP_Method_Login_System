@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reqres Staff</title>
+    <link rel="stylesheet" href="public/css/bootstrap.css">
+    <link rel="stylesheet" href="public/css/1-reqres-users.css">
+</head>
+
+<body>
+
+    <!-- container -->
+    <div class="container d-flex flex-column text-capitalize">
+
+        <!-- navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light mb-5 rounded-bottom sticky-top shadow-sm">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="">Reqress Staff</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a id="signup" class="nav-link text-danger" href="#" tabindex="-1" >Logout</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input id="search-input" class="form-control me-2 " type="search"
+                            placeholder="Press / to Search " aria-label="Search">
+                        <button id="search-button" class="btn btn-outline-success">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!-- sort users -->
+        <select name="select" id="select-box" class=" align-self-start rounded bg-dark text-white mb-2">
+            <option value="">Sort</option>
+            <option value="">Latest</option>
+            <option value="id">Id</option>
+            <option value="first_name">First Name</option>
+            <option value="last_name">Last Name</option>
+            <option value="email">Email</option>
+        </select>
+
+        <!-- main -->
+        <main class="row">
+        </main>
+
+        <!-- add new button -->
+        <div class="new-user d-flex justify-content-end">
+            <button id="add-user-button" type="button" class="btn btn-dark btn-add" data-bs-toggle="modal"
+                data-bs-target="#more-info-modal">
+                Add New Employee
+            </button>
+        </div>
+        <!-- modal -->
+        <div class="modal fade" id="more-info-modal" tabindex="-1" aria-labelledby="moreInfoModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content bg-dark shadow-lg">
+                    <div class="modal-header ">
+                        <h5 class="modal-title text-capitalize" id="exampleModalLabel">informations of employee </h5>
+                        <button type="button" class="btn btn-lg text-white fs-5 " data-bs-dismiss="modal"
+                            aria-label="Close">X</button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button id="update-user" type="button" class="btn btn-warning">Update</button>
+                        <button id="delete-user" type="button" class="btn btn-danger"
+                            data-bs-dismiss="modal">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- pagination -->
+        <div class="row ">
+            <nav aria-label="..." class="d-flex justify-content-center">
+                <ul id="pagination" class="pagination pagination-sm">
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- js -->
+    <script src="public/js/jquery.min.js"></script>
+    <script src="public/js/bootstrap.js"></script>
+    <script src="public/js/1-reqres-users.js"></script>
+</body>
+
+</html>

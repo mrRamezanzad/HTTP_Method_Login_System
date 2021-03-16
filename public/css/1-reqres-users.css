@@ -1,0 +1,75 @@
+nav.scroll .navbar-brand {
+  color: #BB467F;
+  font-weight: 500;
+}
+
+.card img {
+  margin: 10px auto;
+  height: 200px !important;
+  width: 200px !important;
+}
+
+.modal {
+  border-radius: 10px;
+}
+.modal .card img {
+  background-size: cover;
+  border-radius: 5px;
+}
+.modal .card span {
+  font-weight: 300;
+  color: whitesmoke;
+}
+
+.modal-content {
+  color: white;
+}
+.modal-content div {
+  border: none;
+}
+.modal-content [data-bs-dismiss=modal] {
+  color: white !important;
+}
+.modal-content [data-bs-dismiss=modal]:hover {
+  color: #BC2D3B !important;
+}
+.modal-content #save-new:hover {
+  color: white !important;
+}
+.modal-content #save-update:hover {
+  color: white !important;
+}
+.modal-content #delete-user[data-bs-dismiss=modal] {
+  color: black !important;
+}
+.modal-content #delete-user[data-bs-dismiss=modal]:hover {
+  color: black !important;
+}
+
+.btn-add {
+  align-self: flex-end;
+}
+
+.active a {
+  background-color: #212529 !important;
+  border: #212529;
+}
+
+.page-link {
+  color: #212529;
+}
+.page-link:hover {
+  color: #212529;
+  cursor: pointer;
+}
+
+/* page 404 */
+.error-404{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin:0  auto;
+  padding-top: 15%;
+  color: #212529;
+  font-size: 5rem;
+  font-weight: 300;
+}
